@@ -4,8 +4,6 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $gender = $_POST['gender'];
 
-alert($username);
-
 if (!empty($username) || !empty($password) || !empty($gender)) {
   $host = "localhost";
   $dbUsername = "root";
