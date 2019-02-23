@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       100;
     counter++;
   });
-  overallHealth = sum / counter;
+
+  overallHealth = 100 - 2 * Math.abs(sum / counter - 50);
   alert(overallHealth);
 });
