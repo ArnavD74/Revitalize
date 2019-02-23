@@ -125,188 +125,7 @@
               </button>
             </div>
           </div>
-
           <div>
-<<<<<<< HEAD
-           
-=======
-            <form action="insert.php" method="POST">
-              <div class="form-group">
-                <label id="caloriesDailyInput">Calories</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Calories"
-                />
-              </div>
-              <div class="form-group">
-                <label id="totalFatDailyInput">Total Fat</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="g"
-                />
-              </div>
-              <div class="form-group">
-                <label id="saturatedFatDailyInput">Saturated Fat</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="g"
-                />
-              </div>
-              <div class="form-group">
-                <label id="transFatDailyInput">Trans Fat</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="g"
-                />
-              </div>
-              <div class="form-group">
-                <label id="cholesterolDailyInput">Cholesterol</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="mg"
-                />
-              </div>
-              <div class="form-group">
-                <label id="sodiumDailyInput">Sodium</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="mg"
-                />
-              </div>
-              <div class="form-group">
-                <label id="carbohydratesDailyInput">Total Carbohydrates</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="g"
-                />
-              </div>
-              <div class="form-group">
-                <label id="dietaryFiberDailyInput">Dietary Fiber</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="g"
-                />
-              </div>
-              <div class="form-group">
-                <label id="sugarDailyInput">Total Sugars</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="g"
-                />
-              </div>
-              <div class="form-group">
-                <label id="vitaminADailyInput">Vitamin A</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="µg"
-                />
-              </div>
-              <div class="form-group">
-                <label id="vitaminCDailyInput">Vitamin C</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="µg"
-                />
-              </div>
-              <div class="form-group">
-                <label id="vitaminDDailyInput">Vitamin D</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="µg"
-                />
-              </div>
-              <div class="form-group">
-                <label id="vitaminEDailyInput">Vitamin E</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="µg"
-                />
-              </div>
-              <div class="form-group">
-                <label id="vitaminKDailyInput">Vitamin K</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="µg"
-                />
-              </div>
-              <div class="form-group">
-                <label id="vitaminB6DailyInput">Vitamin B6</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="mg"
-                />
-              </div>
-              <div class="form-group">
-                <label id="vitaminB12DailyInput">Vitamin B12</label>
-                <input
-                  type="number"
-                  step="any"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="µg"
-                />
->>>>>>> ea676a6507b3617ee6e55ec00464a169ab91df8e
               </div>
               <button
                 id="btnSubmit"
@@ -315,23 +134,19 @@
                 style="margin-bottom: 1rem;"
                 onclick="storeIntake();"
               >
-<<<<<<< HEAD
 
               <input type="text" id="foodNameInput" onchange="apiCall(this.value)">
 
                 <script>
                   function apiCall(fooditem) {
-                      fetch('https://api.nutritionix.com/v1_1/search/' + fooditem + '?results=0%3A1&cal_min=0&cal_max=50000&fields=*&appId=5d96c63f&appKey=180226172327503b35c631d309b070b0').then(response => {
+                      var foodResults = fetch('https://api.nutritionix.com/v1_1/search/' + fooditem + '?results=0%3A1&cal_min=0&cal_max=50000&fields=*&appId=5d96c63f&appKey=180226172327503b35c631d309b070b0').then(response => {
                       response.json().then(json => {
-                      let data = json;
-                      console.log(json)
+                      console.log(foodResults);
                       });
                     });
                 }
                   </script>
 
-=======
->>>>>>> ea676a6507b3617ee6e55ec00464a169ab91df8e
                 Submit
               </button>
             </form>
